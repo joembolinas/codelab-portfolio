@@ -34,15 +34,15 @@ Follow each module in order to build and launch your personal portfolio:
 
 | Step | Guide | Description |
 | :--- | :--- | :--- |
-| **00** | [Full Walkthrough & Transcript](00-Launch_your_portfolio_website_with_AI.md) | Complete guide and verbatim video transcript of the codelab demo. |
-| **01** | [Introduction](01-Introduction.md) | Overview of AI Studio Build Mode, objectives, and video demo. |
-| **02** | [Project Setup](02-Project_Setup.md) | Account verification, Google Cloud Starter Tier vs. Standard deployment tiers. |
-| **03** | [Create Portfolio](03-Create_Portfolio.md) | Formulating prompts in AI Studio Build Mode to generate portfolio UI. |
-| **04** | [Test and Iterate](04-Test_and_Iterate.md) | Validating UI in the live preview sandbox and using the automated Fix assistant. |
-| **05** | [Deploy to Cloud Run](05-Deploy_to_Cloud_Run.md) | 1-click deployment wizard, setting `.ai.studio` custom prefixes, and container publishing. |
-| **06** | [Add Custom Domain](06-Add_custom_domain.md) | *(Optional)* Configuring DNS records (`A`, `AAAA`, `CNAME`) and automated SSL certificate provisioning. |
-| **07** | [Clean Up](07-Clean_Up.md) | Unpublishing services, deleting app state, or shutting down Google Cloud projects. |
-| **08** | [Conclusion](08-Conclusion.md) | Wrap-up and claiming your Builder Journey completion badge. |
+| **00** | [Full Walkthrough & Transcript](code-labs/00-Launch_your_portfolio_website_with_AI.md) | Complete guide and verbatim video transcript of the codelab demo. |
+| **01** | [Introduction](code-labs/01-Introduction.md) | Overview of AI Studio Build Mode, objectives, and video demo. |
+| **02** | [Project Setup](code-labs/02-Project_Setup.md) | Account verification, Google Cloud Starter Tier vs. Standard deployment tiers. |
+| **03** | [Create Portfolio](code-labs/03-Create_Portfolio.md) | Formulating prompts in AI Studio Build Mode to generate portfolio UI. |
+| **04** | [Test and Iterate](code-labs/04-Test_and_Iterate.md) | Validating UI in the live preview sandbox and using the automated Fix assistant. |
+| **05** | [Deploy to Cloud Run](code-labs/05-Deploy_to_Cloud_Run.md) | 1-click deployment wizard, setting `.ai.studio` custom prefixes, and container publishing. |
+| **06** | [Add Custom Domain](code-labs/06-Add_custom_domain.md) | *(Optional)* Configuring DNS records (`A`, `AAAA`, `CNAME`) and automated SSL certificate provisioning. |
+| **07** | [Clean Up](code-labs/07-Clean_Up.md) | Unpublishing services, deleting app state, or shutting down Google Cloud projects. |
+| **08** | [Conclusion](code-labs/08-Conclusion.md) | Wrap-up and claiming your Builder Journey completion badge. |
 
 ---
 
@@ -95,7 +95,7 @@ Verify navigation, links, and styling in the interactive preview pane:
 4. Click **Publish App**. Google Cloud Run builds and registers the container image and exposes an HTTPS URL in 2–4 minutes.
 
 > [!IMPORTANT]
-> To prevent unwanted cloud charges when you are done experimenting, visit the [AI Studio Apps Dashboard](https://aistudio.google.com/app/apps?authuser=1) and delete unused apps or unpublish Cloud Run services as detailed in [07-Clean_Up.md](07-Clean_Up.md).
+> To prevent unwanted cloud charges when you are done experimenting, visit the [AI Studio Apps Dashboard](https://aistudio.google.com/app/apps?authuser=1) and delete unused apps or unpublish Cloud Run services as detailed in [07-Clean_Up.md](code-labs/07-Clean_Up.md).
 
 ---
 

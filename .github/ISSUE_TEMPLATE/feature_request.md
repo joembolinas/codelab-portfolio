@@ -1,61 +1,40 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
-title: '[FEATURE] '
+about: Suggest a new capability or improvement
+title: '[FEAT] '
 labels: 'enhancement, needs-review'
 assignees: ''
 ---
 
-## 🚀 Feature Description
+## Summary
 
-A clear and concise description of what you want to happen.
+A clear, one-line description of the feature being proposed.
 
-## 💡 Problem Statement
+## Problem it solves
 
-Is your feature request related to a problem? Please describe. A clear and concise description of
-what the problem is. Ex. I'm always frustrated when [...]
+Describe the current limitation or friction. What is difficult, missing, or broken without this feature?
 
-## 🎯 Proposed Solution
+## Proposed solution
 
-Describe the solution you'd like. A clear and concise description of what you want to happen.
+Describe the desired behavior or implementation. Be specific about what changes or additions are needed.
 
-## 🔄 Alternative Solutions
+## Alternatives considered
 
-A clear and concise description of any alternative solutions or features you've considered.
+List any other approaches you considered and why you ruled them out.
 
-## 📋 Acceptance Criteria
+## Acceptance criteria
 
-- [ ] Criterion 1
-- [ ] Criterion 2
-- [ ] Criterion 3
+- [ ]
+- [ ]
+- [ ]
 
-## 🎨 Design Considerations
+## Priority
 
-- [ ] Mobile responsiveness required
-- [ ] Accessibility compliance (WCAG AA)
-- [ ] Performance impact assessed
-- [ ] Cross-browser compatibility
+- [ ] Critical — blocking current work
+- [ ] High — significant value, should be addressed soon
+- [ ] Medium — useful, but not urgent
+- [ ] Low — nice to have
 
-## 📊 Success Metrics
+## Related issues / PRs
 
-How will we measure the success of this feature?
-
-- [ ] User engagement metrics
-- [ ] Performance metrics
-- [ ] Accessibility metrics
-- [ ] Other: \***\*\_\_\_\*\***
-
-## 🔗 Related Issues
-
-Link any related issues or pull requests.
-
-## 📝 Additional Context
-
-Add any other context or screenshots about the feature request here.
-
-## 🏷️ Priority
-
-- [ ] Critical (must have)
-- [ ] High (should have)
-- [ ] Medium (could have)
-- [ ] Low (would be nice)
+<!--  # -->

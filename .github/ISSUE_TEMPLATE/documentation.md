@@ -1,63 +1,45 @@
 ---
 name: Documentation
-about: Improvements or additions to documentation
+about: Corrections, improvements, or additions to documentation
 title: '[DOCS] '
-labels: 'documentation, enhancement'
+labels: 'documentation'
 assignees: ''
 ---
 
-## 📚 Documentation Type
+## Summary
 
-- [ ] API documentation
-- [ ] User guide
-- [ ] Developer guide
-- [ ] README update
-- [ ] Code comments
-- [ ] Architecture documentation
-- [ ] Deployment guide
+A clear, one-line description of what needs to change in the documentation.
 
-## 📋 Current State
+## Location
 
-Describe the current documentation state and what's missing or unclear.
+Which file(s), section(s), or URL(s) are affected?
 
-## 🎯 Proposed Changes
+- File / path:
+- Section or heading:
 
-Describe what documentation needs to be added or improved.
+## Type of change
 
-## 📝 Content Outline
+- [ ] Correction — something is wrong or outdated
+- [ ] Clarification — something is unclear or ambiguous
+- [ ] Addition — something is missing
+- [ ] Restructure — organization or flow needs improvement
+- [ ] Other:
 
-Provide an outline of the content that should be included:
+## Current state
 
-1.
-2.
-3.
+Describe what the documentation currently says or lacks.
 
-## 👥 Target Audience
+## Proposed change
 
-Who is this documentation for?
+Describe what it should say or include. Paste a draft if available.
 
-- [ ] End users
-- [ ] Developers
-- [ ] Contributors
-- [ ] DevOps/Infrastructure team
+## Acceptance criteria
 
-## 📍 Location
+- [ ] Information is accurate and verified against official sources
+- [ ] Language is clear and consistent with surrounding content
+- [ ] Internal links and references are valid
+- [ ] Content follows the project's documentation style
 
-Where should this documentation be placed?
+## Related issues / PRs
 
-- [ ] README.md
-- [ ] docs/ folder
-- [ ] Code comments
-- [ ] Wiki
-- [ ] Other: \***\*\_\_\_\*\***
-
-## 🔗 Related Issues
-
-Link any related issues or pull requests.
-
-## 📋 Acceptance Criteria
-
-- [ ] Documentation is clear and comprehensive
-- [ ] Examples are provided where appropriate
-- [ ] Documentation follows project style guide
-- [ ] Documentation is reviewed and approved
+<!--  # -->
