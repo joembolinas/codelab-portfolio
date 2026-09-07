@@ -1,353 +1,49 @@
-FYI !
+# AI Agent Guide
 
-ALL STATED BELOW IS A MIX AND MATCH OF PROJECT GOVERNANCE, INSTRUCTIONS, AND REFERENCE MATERIALS COMIING FROM MULTIPLE SOURCES. IT IS NOT A SINGLE DOCUMENT, AND IT IS NOT A SINGLE SOURCE OF TRUTH.
-I WANT YOU TO ADOPT THE ROLE OF A DISCIPLINED PROJECT ASSISTANT, AND USE THIS MATERIAL AS A REFERENCE FOR YOUR BEHAVIOR AND DECISION-MAKING.
+This repository is an initially configured learning and project workspace for launching a portfolio with Google AI Studio Build Mode and Google Cloud Run. The current committed material is primarily learning documentation and setup guidance, but the intended next stage is planning and building the real project. Do not infer that the absence of application code means application work is out of scope.
 
+## Source of truth
 
+Use repository files and current official Google documentation as evidence. The numbered chapters define the learner journey:
 
+1. `01-Introduction.md`
+2. `02-Project_Setup.md`
+3. `03-Create_Portfolio.md`
+4. `04-Test_and_Iterate.md`
+5. `05-Deploy_to_Cloud_Run.md`
+6. `06-Add_custom_domain.md`
+7. `07-Clean_Up.md`
+8. `08-Conclusion.md`
 
+`README.md` is the public entry point. `00-Launch_your_portfolio_website_with_AI.md` is the full walkthrough/transcript and should not silently override concise chapter instructions.
 
+The detailed agent stack is documented in [`.agents/`](.agents/README.md). Read [`.agents/instructions/INSTRUCTIONS.md`](.agents/instructions/INSTRUCTIONS.md) and [`.agents/rules/RULES.md`](.agents/rules/RULES.md) before broad documentation or coding changes.
 
-## ROLE
+## Working agreement
 
+- Keep the numbered learning sequence and existing filenames stable.
+- Prefer small, focused Markdown edits; preserve useful links and admonitions.
+- Separate canonical instructions from transcript commentary, optional guidance, and warnings.
+- Verify local links, heading structure, code fences, footnotes, and image references when editing related content.
+- Treat Google product names, UI labels, pricing, quotas, billing, URLs, and deployment behavior as time-sensitive. Verify them against official Google sources before asserting current facts.
+- Do not invent application code, tests, deployment results, screenshots, or project state. When implementation begins, inspect the actual source tree and project configuration before choosing patterns.
+- Use explicit status language: `Proposed`, `Implemented`, `Validated`, `Verified`, `Complete`, `Deferred`, or `Verification pending`.
+- Keep secrets out of Markdown and agent configuration. Never commit real credentials.
+- Do not add frameworks, dependencies, or architecture merely because they are common; select them from a written plan and the project's actual requirements.
 
-Work as a disciplined project assistant: preserve scope, maintain continuity, verify actual project state, and avoid assuming that discussed or generated work is completed.
+## Clarification and planning gate
 
-## SOURCE HIERARCHY
+- If the request, project phase, target directory, runtime, or acceptance criteria are unclear, stop and ask focused questions rather than guessing.
+- Before coding a new feature or making architectural changes, create or confirm a plan that states scope, affected files, assumptions, validation, and rollback/defer criteria.
+- Planning is a gate, not a reason to avoid coding: once the plan is clear, implementation work is allowed and should proceed incrementally.
+- If repository evidence conflicts with the conversation, report the conflict and ask which source should govern.
 
-Use information according to relevance:
+## Change lifecycle
 
-- AGENT.md
-    > main entry poin repo wide agent information and behavior
-- .agents/rules/RULES.md - 
-    > detailed governance, contracts, rules, 
-- .agents/instructions/INSTRUCTIONS.md
-    > project-specific instructions, including phase control, verification, and documentation requirements, AI behavior, validation requirements
-- .config/settings.yaml
-    > project-specific configuration settings
+For non-trivial work, use: **Plan → Edit → Validate → Verify → Finish**.
 
+Before finishing, inspect the diff and report what was actually checked. Use documentation checks for the current learning material, and use the project's real build/test/lint commands once application code is introduced.
 
-1. Relevant project source/documentation
-2. Verified repository/filesystem state
-3. Conversation history
+## Commit convention
 
-
-## Workflow
-
-
-
-
----
-
-
-
-CRITICAL: PROJECT STATE VERIFICATION
-
-Never treat conversation claims or generated code as proof of project state.
-
-Distinguish:
-
-Planned → Breakdown → Implemented → Test -> Validated → Verified → Complete
-
-Code generated ≠ implemented.
-Implemented ≠ validated.
-Validated ≠ verified.
-
-Unverified work must not be declared complete.
-
-When implementation status, repository state, phase completion, or file changes matter, verify using available evidence or ask the user for the minimum necessary evidence, such as:
-
-"git status", "git log", "tree", "find", tests, build output, or application behavior.
-
-If verification is unavailable, explicitly state:
-
-Verification pending
-
-rather than claiming completion.
-
-PHASE CONTROL
-
-The project uses sequential phases.
-
-Do not silently advance to another phase while the current phase has unresolved completion/verification status.
-
-Use:
-
-Plan → Implement → Validate → Verify → Finish
-
-If status is unclear, identify what is missing and request the appropriate evidence.
-
-SCOPE
-
-Keep work within the requested/current phase.
-
-Flag unrelated, premature, or scope-expanding work before implementing it.
-
-Do not silently change project constraints or architecture.
-
-FILESYSTEM BOUNDARY
-
-The application must remain self-contained within its app directory.
-
-It must not:
-
-- write or modify files outside the app directory;
-- execute scripts outside the app directory.
-
-Treat violations as project issues and do not declare affected work complete.
-
-
-OPERATING PRINCIPLE
-
-Do not guess project state. Verify it.
-
-Be concise by default. Load or consult detailed project resources only when the current task requires them.
-
-
-AGENTS for the repository
-
-## Intent
-
-## Primary Goal
-
-## Workspace Scopes & Local Authorities
-
-## Must Do
-
-## Must Not
-
-## Gotchas
-
-
-### Naming Conventions
-## §3 — Core Agent Behaviors
-## §5 — Agent Infrastructure Reference
-
-The `.agents/` directory contains the full agent infrastructure for this workspace:
-
-| Directory                        | Purpose                                                                                                                  |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [`rules/`](.agents/rules/)       | Behavioral rules: coding guidelines, OKF standard, safety policies, [log standard](.agents/rules/log-standard.md)        |
-| [`agents/`](.agents/agents/)     | Subagent definitions: [Wiki Librarian](.agents/agents/wiki-librarian.md), [Vault Linter](.agents/agents/vault-linter.md) |
-| [`hooks/`](.agents/hooks/)       | Lifecycle hooks: [post-ingest](.agents/hooks/post-ingest.md), [pre-commit](.agents/hooks/pre-commit.md)                  |
-| [`skills/`](.agents/skills/)     | Capabilities: commit generator, tts-notes, workspace-mapper, project-chronicler                                          |
-| [`prompts/`](.agents/prompts/)   | Reusable prompts: transcript converter, table of contents generator                                                      |
-| [`scripts/`](.agents/scripts/)   | Python utility modules: vault linter, index updater, lecture generator                                                   |
-| [`settings/`](.agents/settings/) | Central configuration: `settings.yaml`                                                                                   |
-| [`mcp/`](.agents/mcp/)           | MCP server integration configs: [notion-sync](.agents/mcp/notion-sync.md)                                                |
-| [`memory.md`](.agents/memory.md) | Cross-session persistent knowledge base
-
-
-## §6 — Agent Working Agreement
-
-### 6.1 — Canonical Validation Commands
-
-
-
-
-
-# 001 — Project Master Plan
-
-> This document records the intended product direction, development phases, project constraints, and verified project history. It must be updated as the project evolves.
-
----
-
-## 1. Project Identity
-
-**Project:**
-**Target:** WSL2
-**Initial development version:** v0.1
-**Final release target:** v1.0
-
-### Product concept
-
-
-## 2. Project Schema
-
-### Primary governance
-
-Source, Governance, Naming convention, principle, coding style, coding standard, detailed project governance, contracts, rules, AI behavior, validation requirements, and other operating rules.
-
-
-
-### Master plan
-README, dashboard, planner, documentation, etc
-
-This document is the living plan/history of the project.
-
-It records:
-
-- project direction;
-- phases;
-- planned work;
-- implementation history;
-- completion status;
-- major decisions;
-- verified milestones.
-
-### Phase documentation
-### Project logs
-Project logs/changelogs preserve historical development activity.
-The development journey should be recorded from the beginning using the established log format:
-
----
-
-## 3. Project State Model
-
-
-## 4. Core Project Constraints
-
-### Application boundary
-
-The entire application must remain self-contained inside its designated application directory.
-
-The application must not:
-
-- write or modify files outside its app directory;
-- execute scripts outside its app directory.
-
-Testing resources/environment are supplied separately in a directory at the root of the user's vault space.
-
-Any implementation that violates this boundary is a project issue and must not be declared complete.
-
-### Repository portability
-
----
-
-## 5. Primary Design Principles
-
-
----
-
-## 6. Target User Experience
-
-
-## 7. Functional Areas
-
-### 01 — Daily Workflow
-
-
-
-
-## 8. Command / script Information Model
-
-
-## 9. Safety Model
-
-
-## 10. Daily Workflow Concept
-
-## 11. Initial Architecture Strategy
-
-D
-
-
-## 13. Navigation
-
-
-## 15. Development Phases
-
-
-## 18. Verification and Validation
-
-Before a phase or significant implementation is declared complete, verify the relevant facts.
-
-Possible evidence:
-
-Do not require every check for every task.
-
-Use the minimum evidence necessary for the claim being made.
-
-If actual state cannot be inspected, request evidence from the user.
-
-When verification remains unavailable:
-
-**Verification pending**
-
----
-
-## 19. Documentation Integrity
-
-Documentation must reflect actual project status.
-
-Use explicit states:
-
-- Planned
-- Proposed
-- Implemented
-- Validated
-- Verified
-- Complete
-- Deferred
-- Blocked
-
-Never document proposed or unverified functionality as completed functionality.
-
----
-
-## 20. Current Project State
-
-### Project Setup
-
-**Status: Complete for now**
-
-The Project Space governance/instruction structure has been established.
-
-
-**Status: Not started**
-
-No implementation phase should be assumed complete from this plan.
-
-### Phase 1
-
-**Status: Planned**
-Phase 1 has not yet been processed.
-
----
-
-## 21. Historical Reconciliation Note
-
-The original planning document was supplied
-Its product concept and detailed UX direction are preserved here as the initial baseline.
-
-Additional project governance decisions established after the original plan are incorporated here where they affect project planning, including:
-
-- self-contained application-directory boundary;
-- separate testing environment;
-- sequential phase control;
-- explicit Plan → Implement → Validate → Verify → Finish lifecycle;
-- verification before completion claims;
-- required documentation/log maintenance;
-- distinction between conversation claims and verified project state;
-
-Where a historical decision cannot be independently verified, it must not be represented as a confirmed implementation fact.
-
----
-
-## 22. Long-Term Product Direction
-
-
-## 23. Plan Maintenance
-
-This is a living document.
-
-Update it when there is a verified change to:
-
-- project direction;
-- phase scope;
-- architecture;
-- major decision;
-- implementation status;
-- completed milestone;
-- deferred work;
-- known limitation.
-
-Do not update historical status based solely on conversation claims.
-
-The repository/project evidence remains authoritative for actual implementation state.
-
----
-
-## 24. Master Principle
-
-> **Plan accurately. Implement deliberately. Validate explicitly. Verify against the real project state. Document truthfully. Only then declare completion and proceed.**
+Documentation changes normally use `docs:`; application work uses the appropriate `feat:`, `fix:`, or `refactor:` type; agent infrastructure uses `chore(agents):`; validation automation uses `ci:`. Keep commit subjects imperative and concise.
