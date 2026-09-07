@@ -9,14 +9,36 @@
 
 ---
 
-- [01-Introduction](01-Introduction.md)
-- [02-Project_Setup](02-Project_Setup.md)
-- [03-Create_Portfolio](03-Create_Portfolio.md)
-- [04-Test_and_Iterate](04-Test_and_Iterate.md)
-- [05-Deploy_to_Cloud_Run](05-Deploy_to_Cloud_Run.md)
-- [06-Add_custom_domain](06-Add_custom_domain.md)
-- [07-Clean_Up](07-Clean_Up.md)
-- [08-Conclusion](08-Conclusion.md)
+<table width="100%" style="width: 100%; border-collapse: separate; border-spacing: 8px; table-layout: fixed;">
+  <tr>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="01-Introduction.md"><strong>01-Introduction</strong></a>
+    </td>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="02-Project_Setup.md"><strong>02-Project_Setup</strong></a>
+    </td>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="03-Create_Portfolio.md"><strong>03-Create_Portfolio</strong></a>
+    </td>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="04-Test_and_Iterate.md"><strong>04-Test_and_Iterate</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="05-Deploy_to_Cloud_Run.md"><strong>05-Deploy_to_Cloud_Run</strong></a>
+    </td>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="06-Add_custom_domain.md"><strong>06-Add_custom_domain</strong></a>
+    </td>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="07-Clean_Up.md"><strong>07-Clean_Up</strong></a>
+    </td>
+    <td align="center" width="25%" style="padding: 14px 8px; border: 1px solid #dadce0; border-radius: 8px; background-color: #f8f9fa;">
+      <a href="08-Conclusion.md"><strong>08-Conclusion</strong></a>
+    </td>
+  </tr>
+</table>
 
 ---
 
