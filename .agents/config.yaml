@@ -1,0 +1,24 @@
+version: 1
+project:
+  type: learning-workspace
+  lifecycle: setup-and-review-before-implementation
+  coding_allowed_after_plan: true
+  clarification_required_when_ambiguous: true
+  primary_entrypoint: README.md
+  chapter_glob: "0[0-8]-*.md"
+  transcript: 00-Launch_your_portfolio_website_with_AI.md
+defaults:
+  instructions: .agents/instructions/INSTRUCTIONS.md
+  rules: .agents/rules/RULES.md
+  settings: .agents/settings/settings.yaml
+validation:
+  automated_commands:
+    - python .agents/scripts/check_markdown.py
+    - python .agents/scripts/check_project_state.py
+  application_commands: []
+  manual_checks:
+    - local Markdown links
+    - heading hierarchy
+    - fenced code blocks
+    - footnotes and image references
+    - official-source verification for time-sensitive claims

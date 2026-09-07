@@ -1,0 +1,34 @@
+LOG.md
+attachements/
+env
+ENV
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build output and caches
+dist/
+build/
+.cache/
+.next/
+.nuxt/
+
+# Logs and coverage
+*.log
+coverage/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Agent session logs and traces
+.agents/sessions/

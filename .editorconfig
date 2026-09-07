@@ -1,0 +1,49 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 3
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown files (preserve trailing whitespace for markdown line breaks)
+[*.md]
+indent_style = space
+indent_size = 3
+trim_trailing_whitespace = false
+max_line_length = off
+
+# YAML and JSON configurations
+[*.{yml,yaml,json}]
+indent_style = space
+indent_size = 3
+trim_trailing_whitespace = true
+
+# Python scripts
+[*.py]
+indent_style = space
+indent_size = 3
+trim_trailing_whitespace = true
+
+# Shell scripts
+[*.{sh,bash}]
+indent_style = space
+indent_size = 3
+end_of_line = lf
+
+# Web technologies
+[*.{html,css,scss,js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 3
+trim_trailing_whitespace = true
+
+# Makefiles require real tabs
+[{Makefile,*.mk}]
+indent_style = tab
+

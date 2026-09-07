@@ -1,0 +1,27 @@
+scope: repository
+default_agent: project-planner
+coding_mode: enabled_after_plan
+ambiguity_policy: stop_and_ask
+source_priority:
+  - repository_files
+  - official_google_documentation
+  - user_request
+  - conversation_context
+status_vocabulary:
+  - Proposed
+  - Implemented
+  - Validated
+  - Verified
+  - Complete
+  - Deferred
+  - Verification pending
+external_claims:
+  require_official_source: true
+  preferred_domains:
+    - developers.google.com
+    - cloud.google.com
+    - ai.google.dev
+    - aistudio.google.com
+scripts:
+  dependency_free_first: true
+  state_is_evidence_not_completion: true
