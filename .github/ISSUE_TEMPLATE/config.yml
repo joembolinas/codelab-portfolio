@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Google AI Studio documentation
+    url: https://ai.google.dev/aistudio
+    about: Official docs for AI Studio Build Mode and APIs
+  - name: Google Cloud Run documentation
+    url: https://cloud.google.com/run/docs
+    about: Official docs for deploying to Cloud Run
+  - name: Google Codelabs
+    url: https://codelabs.developers.google.com/
+    about: Browse all Google Codelabs
+
